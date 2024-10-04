@@ -45,7 +45,7 @@ fun Page() {
         TextField(
             value = symbol,
             onValueChange = { symbol = it },
-            label = { Text("Введіть символ") }
+            label = { Text("Введіть пару") }
         )
         Button(onClick = {
             scope.launch {
