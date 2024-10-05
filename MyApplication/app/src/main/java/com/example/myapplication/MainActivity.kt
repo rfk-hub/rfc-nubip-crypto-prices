@@ -41,6 +41,9 @@ fun Page() {
     var price by remember { mutableStateOf("") }
     val scope = rememberCoroutineScope()
 
+    // Додана невикористовувана змінна для тесту
+    val unusedVariable = "Це змінна, яка не використовується, але не впливає на програму"
+
     Column(modifier = Modifier.padding(16.dp)) {
         TextField(
             value = symbol,
